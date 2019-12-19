@@ -21,5 +21,7 @@ class PostsTableSeeder extends Seeder
 
         factory(App\Post::class, 50)->create();
 
+        $p->save();
+
     }
 }

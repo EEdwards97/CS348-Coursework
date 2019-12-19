@@ -15,11 +15,14 @@ class UsersTableSeeder extends Seeder
     {
         //
         $u = new User;
+        $u -> user_id = 1;
         $u -> name = "Greg";
         $u -> email = "email@email.com";
         $u -> password = "password";
 
         factory(App\User::class, 50)->create();
+
+        $u->save();
 
     }
 }

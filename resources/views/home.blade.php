@@ -1,11 +1,9 @@
-<!doctype html>
+@extends('layouts.app')
 
-<html lang="eng">
+@section('title', '')
 
-  <head>
-  </head>
+@section('content')
 
-  <body>
-  </body>
+  <p>Testing</p>
 
-</html>
+@endsection

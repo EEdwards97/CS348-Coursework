@@ -19,3 +19,11 @@ Route::get('/posts', function ($user) {
     return "This is the Posts page";
     return view('user', ['post' => $user]);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
