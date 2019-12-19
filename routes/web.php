@@ -14,3 +14,12 @@
 Route::get('/home', function () {
     return "This is the Home page for Coursework 348";
 });
+
+Route::get('/posts', function ($post) {
+    return "This is the Post page for Coursework 348";
+    return view(['post' => $post]);
+});
+
+Route::get('/user', function ($user) {
+    return "This is the User page for Coursework 348";
+});
