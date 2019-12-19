@@ -15,7 +15,7 @@ class PostsTableSeeder extends Seeder
     {
         //
         $p = new Post;
-        $p -> user_id = 1;
+        $p -> id = 1;
         $p -> post_title = "Title";
         $p -> post_content = "Post Content";
 

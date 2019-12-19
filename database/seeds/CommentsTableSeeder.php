@@ -15,7 +15,7 @@ class CommentsTableSeeder extends Seeder
     {
         //
         $c = new Comment;
-        $c -> user_id = 1;
+        $c -> id = 1;
         $c -> comment_content = "Comment Content";
 
         factory(App\Comment::class, 50)->create();

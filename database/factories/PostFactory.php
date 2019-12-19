@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 $factory->define(Post::class, function (Faker $faker) {
     return [
         //
-        'user_id' => User::all()->random()->id,
+        'id' => User::all()->random()->id,
         'post_title' => $faker->realText($maxNBChars = 60, $indexSize = 2),
         'post_content' => $faker->realText($maxNBChars = 1000, $indexSize = 2),
     ];
