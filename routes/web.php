@@ -20,6 +20,8 @@ Route::get('/posts', function ($user) {
     return view('user', ['post' => $user]);
 });
 
+Auth::routes();
+
 Route::get('posts', 'PostController@index');
 
 Route::get('users', 'UserController@index');
