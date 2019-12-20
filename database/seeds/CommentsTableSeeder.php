@@ -14,12 +14,13 @@ class CommentsTableSeeder extends Seeder
     public function run()
     {
         //
-        $c = new Comment;
-        $c -> id = 1;
-        $c -> comment_content = "Comment Content";
+        //$timestamps = false;
+        $comment = new Comment;
+        $comment -> id = 1;
+        $comment -> comment_content = "Comment Content";
 
-        factory(App\Comment::class, 50)->create();
+        //factory(App\Comment::class, 50)->create();
 
-        $c->save();
+        $comment->save();
     }
 }

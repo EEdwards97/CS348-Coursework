@@ -14,15 +14,16 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         //
-        $u = new User;
-        $u -> id = 1;
-        $u -> name = "Greg";
-        $u -> email = "email@email.com";
-        $u -> password = "password";
+        //$timestamps = false;
+        $user = new User;
+        $user -> id = 1;
+        $user -> name = "Greg";
+        $user -> email = "fakeemail@fakeemail.com";
+        $user -> password = "password";
 
-        factory(App\User::class, 50)->create();
+        //factory(App\User::class, 10)->create();
 
-        $u->save();
+        $user->save();
 
     }
 }

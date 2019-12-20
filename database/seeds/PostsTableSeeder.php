@@ -14,14 +14,15 @@ class PostsTableSeeder extends Seeder
     public function run()
     {
         //
-        $p = new Post;
-        $p -> id = 1;
-        $p -> post_title = "Title";
-        $p -> post_content = "Post Content";
+        //$timestamps = false;
+        $post = new Post;
+        $post -> id = 1;
+        $post -> post_title = "Title";
+        $post -> post_content = "Post Content";
 
-        factory(App\Post::class, 50)->create();
+        //factory(App\Post::class, 50)->create();
 
-        $p->save();
+        $post->save();
 
     }
 }
