@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Posts')
+@section('title', 'Post')
 
 @section('content')
 
@@ -12,9 +12,9 @@
 
           <li>{{ $post->post_content }}</li>
 
-          <li>Posted by: {{ $post->id }}</li>
+          <li>Posted by: {{ $post->user_id }}</li>
 
-          <li>Date: {{ $timestamp }}</li>
+          <li>Date: {{ $timestamp ?? '' }}</li>
 
   </ul>
 

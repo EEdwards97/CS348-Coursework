@@ -26,7 +26,7 @@ Route::get('users', 'UserController@index');
 
 Route::get('comments', 'CommentController@index');
 
-Route::get('posts/{post_title}', 'PostController@show') ->name ('posts.show');
+Route::get('posts/{id}', 'PostController@show') ->name ('posts.show');
 
 Route::get('users', 'UserController@show');
 

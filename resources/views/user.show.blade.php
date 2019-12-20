@@ -4,7 +4,7 @@
 
 @section('content')
 
-  <p>All Posts</p>
+  <p>User info</p>
 
   <ul>
 
@@ -12,7 +12,7 @@
 
           <li>{{ $user->post_content }}</li>
 
-          <li>{{ $post->id }}</li>
+          <li>{{ $user->user_id }}</li>
 
           <li>{{ $timestamp }}</li>
 

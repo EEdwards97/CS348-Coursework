@@ -16,6 +16,7 @@ class CommentsTableSeeder extends Seeder
         //
         //$timestamps = false;
         $comment = new Comment;
+        $comment -> user_id = 1;
         $comment -> id = 1;
         $comment -> comment_content = "Comment Content";
 
