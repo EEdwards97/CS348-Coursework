@@ -20,10 +20,14 @@ Route::get('/posts', function ($user) {
     return view('user', ['post' => $user]);
 });
 
-Auth::routes();
+Route::get('posts', 'PostController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('users', 'UserController@index');
 
-Auth::routes();
+Route::get('comments', 'CommentController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('posts/{post_title}', 'PostController@show') ->name ('posts.show');
+
+Route::get('users', 'UserController@show');
+
+Route::get('comments', 'CommentController@show');
