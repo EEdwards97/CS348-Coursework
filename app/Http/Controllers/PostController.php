@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index()
     {
         //
-        return Post::all();
+        $posts = Post::all();
 
         return view('posts.index', ['posts' => $posts]);
     }
@@ -51,7 +51,7 @@ class PostController extends Controller
     {
         //
         $post = Post::findOrFail($id);
-        dd($post);
+        //dd($post);
 
         return view('posts.show', ['post' => $post]);
     }

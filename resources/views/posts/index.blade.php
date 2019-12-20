@@ -4,13 +4,13 @@
 
 @section('content')
 
-  <p>All Posts</p>
+  <head>All Posts<head>
 
   <ul>
 
       @foreach ($posts as $post)
-          // <li><ahref="/posts/{{ $post->post_title }}">{{ $post->post_title }}</a></li>
-          <li><a href="{{ route('posts.show', ['id' => $post->post_title]) }}">{{ $post->post_title }}</a></li>
+          //<li><a href="/posts/{{ $post->post_title }}">{{ $post->post_title }}</a></li>
+          <li><a href="{{ route('posts.show', ['post_title' => $post->post_title]) }}">{{ $post->post_title }}</a></li>
 
       @endforeach
 
