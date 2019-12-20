@@ -36,15 +36,5 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    public function signIn(Request $request){
-
-
-
-
-      $user = new User;
-      $user -> id = 1;
-      $user -> name = "Greg";
-      $user -> email = "fakeemail@fakeemail.com";
-      $user -> password = "password";
-    }
+    
 }

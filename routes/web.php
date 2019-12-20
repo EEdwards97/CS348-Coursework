@@ -12,7 +12,7 @@
 */
 
 Route::get('/home', function () {
-    return view('home');
+    return view('welcome');
 });
 
 Route::get('/posts', function ($user) {
@@ -33,3 +33,11 @@ Route::get('posts/{id}', 'PostController@show') ->name ('posts.show');
 Route::get('users', 'UserController@show');
 
 Route::get('comments', 'CommentController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('create', 'PostController@create')->name('posts.create');
+
+Route::post('store', 'PostController@create')->name('posts.store');
